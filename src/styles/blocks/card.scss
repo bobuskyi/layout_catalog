@@ -1,7 +1,7 @@
 .card {
   @include transition;
 
-  width: 200px;
+  width: $card-width;
   box-sizing: border-box;
   padding: 32px 16px 16px;
   border: 1px solid $color-light-grey;
@@ -9,16 +9,10 @@
 
   &:hover {
     transform: scale(1.2);
-
-    &__title {
-      color: $color-dark-blue;
-    }
   }
 
   &__image {
     box-sizing: border-box;
-    width: 160px;
-    height: 134px;
     display: block;
     margin: 0 auto;
   }
@@ -30,6 +24,10 @@
     font-size: 12px;
     line-height: 18px;
     margin: 40px 0 0;
+  }
+
+  &:hover &__title {
+    color: $color-dark-blue;
   }
 
   &__code {

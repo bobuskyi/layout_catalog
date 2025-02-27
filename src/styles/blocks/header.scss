@@ -2,8 +2,8 @@
   display: flex;
   padding: 0 50px;
   justify-content: space-between;
-  font-weight: 500;
-  box-shadow: 0 2px 4px 0 #0000000d;
+  font-weight: $medium;
+  box-shadow: 0 2px 4px 0 $color-of-shadow;
 }
 
 .header__logo {
